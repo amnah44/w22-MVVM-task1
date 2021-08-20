@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CurrencyConverter" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_500</item>
+        <item name="colorPrimaryVariant">@color/green_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green_900</item>
+        <item name="colorSecondaryVariant">@color/green_900</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorSecondary</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="theme_input_box">
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:layout_marginEnd">@dimen/margin_small</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textColor">@color/green_900</item>
+        <item name="android:textColorHint">@color/green_500</item>
+    </style>
+
+    <style name="theme_input_box.dollar">
+        <item name="android:hint">@string/enter_the_dollar_coin</item>
+    </style>
+
+    <style name="theme_input_box.dinar">
+        <item name="android:hint">@string/enter_the_dinar_coin</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+    </style>
+
+    <style name="theme_output_box">
+        <item name="android:layout_marginStart">@dimen/margin_small_2</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:layout_marginEnd">@dimen/margin_small_2</item>
+        <item name="android:layout_marginBottom">@dimen/margin_normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/green_900</item>
+        <item name="android:textColorHint">@color/green_700</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:hint">@string/converter</item>
+    </style>
+</resources>
