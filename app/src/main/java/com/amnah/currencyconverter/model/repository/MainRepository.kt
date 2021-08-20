@@ -1,13 +1,14 @@
 package com.amnah.currencyconverter.model.repository
 
 import com.amnah.currencyconverter.model.domain.Currency
+import com.amnah.currencyconverter.util.Constant.Companion.CONVERTER_NUMBER
 
 class MainRepository {
 
     fun getConvertCurrency(currency: Currency, input: Double): Double {
         return when (currency) {
-            Currency.IQD -> input * 1460
-            Currency.USD -> input / 1460
+            Currency.IQD -> input * CONVERTER_NUMBER
+            Currency.USD -> input / CONVERTER_NUMBER
         }
 
     }
